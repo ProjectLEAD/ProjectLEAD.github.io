@@ -78,13 +78,31 @@
       DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
   -->
  <!-- content goes here-->
+ <!--
+      Include xhr.js in your index.html when using web services that make cross origin requests
+      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
+      Intel(R) App Preview mobile app.
+      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
+  -->
+ <!-- content goes here-->
+ <!--
+      Include xhr.js in your index.html when using web services that make cross origin requests
+      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
+      Intel(R) App Preview mobile app.
+      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
+  -->
+ <!--   
+   You may substitute jQuery for the App Framework selector library.
+   See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+  -->
+ <!-- content goes here-->
 
  <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="app_framework/css/af.ui.min.css">
   <link rel="stylesheet" type="text/css" href="app_framework/css/icons.min.css">
   <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
-  <title>Your New Application</title>
+  <title>Project LEAD App</title>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
   <style type="text/css">
@@ -117,6 +135,11 @@
   <script type="application/javascript" src="sidebar/js/jquery.event.swipe.js"></script>
   <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
   <script type="application/javascript" src="sidebar/js/swipe.js"></script>
+  <!--   
+   You may substitute jQuery for the App Framework selector library.
+   See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+  -->
+  <script type="application/javascript" src="app_framework/appframework.js"></script>
  </head>
 
  <body id="afui">
@@ -150,12 +173,83 @@
 
            <figcaption data-position="bottom"></figcaption>
           </figure>
+         </div>
+         <div class="widget uib_w_22 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Project LEAD is working on sharing some of the most interesting aspects of the STEM felds with the world through social media, and at no cost to the consumer.</p>
+           <p>&nbsp;</p>
+          </div>
          </div><span class="uib_shim"></span>
         </div>
        </div>
        <span class="uib_shim"></span>
       </div>
      </div>
+     <div id="What_We_Love" class="upage-content hidden">
+
+      <div class="grid grid-pad urow uib_row_7 row-height-7" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_7 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+         <div class="widget uib_w_17 d-margins iframe-size" data-uib="media/iframe" data-ver="0">
+          <iframe src="http://projectlead.github.io/MobileApp/TwitterWidget"></iframe>
+         </div><span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
+     </div>
+     <div id="About" class="upage-content hidden">
+
+      <div class="grid grid-pad urow uib_row_9 row-height-9" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_9 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+         <div class="widget uib_w_18 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Project LEAD is run by an amazing group of people. Info about each can be found below!</p>
+          </div>
+         </div>
+         <div class="widget uib_w_19 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle">
+           <div class="widget uib_w_20 scale-image d-margins" data-uib="media/img" data-ver="0">
+            <figure class="figure-align">
+             <img src="John Moosemiller bio.png">
+             <figcaption data-position="bottom"></figcaption>
+            </figure>
+           </div>
+          </div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>John Moosemiller:</p>
+           <p>A rising Sophmore at the University of Houston, and one of the co-founders of Project LEAD. His interests outside his major (Chemical Engineering) reside in technology, and software applications.</p>
+           <p>John does much of the Planning and Production for Project LEAD, and is also the developer of this app.</p>
+           <p>You can find him online in these places:</p>
+           <p>Twitter - @MohnJoosemiller</p>
+           <p>Github - Bltsandwich1</p>
+          </div>
+         </div>
+         <div class="widget uib_w_21 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Bios of the other members of Project LEAD are on their way!</p>
+          </div>
+         </div><span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
+     </div>
+     <div id="about" class="upage-content hidden">
+     </div>
+     <div id="About_Us" class="upage-content hidden">
+     </div>
+
      <div id="profile_page" class="upage-content hidden">
 
       <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
@@ -186,26 +280,27 @@
       </div>
      </div>
 
-     <div id="favorite_page" class="upage-content hidden">
-
-      <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
-       <div class="col uib_col_4 col-0_12-12" data-uib="layout/col" data-ver="0">
-        <div class="widget-container content-area vertical-col">
-
-         <div class="widget uib_w_12 d-margins iframe-size" data-uib="media/iframe" data-ver="0">
-          <iframe src="http://projectlead.github.io/MobileApp/TwitterWidget"></iframe>
-         </div><span class="uib_shim"></span>
-        </div>
-       </div>
-       <span class="uib_shim"></span>
-      </div>
-     </div>
      <!-- /upage-content -->
 
      <footer class="inner-element uib_w_3" data-uib="app_framework/footer" data-ver="0" id="af-footer-0"><a class="widget uib_w_5 d-margins icon home" data-uib="app_framework/button" data-ver="0" id="homebtn">Home</a><a class="widget uib_w_6 d-margins icon heart" data-uib="app_framework/button" data-ver="0" id="favbtn">What we Love</a><a class="widget uib_w_4 d-margins icon magnifier"
       data-uib="app_framework/button" data-ver="0" id="messagebtn">Find Us</a>
      </footer>
 
+     <div class="inner-element uib_w_14 uib_sidebar leftbar bar-bg" data-uib="layout/left_sidebar" data-ver="0" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'io':true}">
+      <div class="sidebar-content">
+
+       <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+        <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
+         <div class="widget-container content-area vertical-col">
+
+          <a class="button widget uib_w_15 d-margins icon info" data-uib="app_framework/button" data-ver="0">About Us</a><span class="uib_shim"></span>
+         </div>
+        </div>
+        <span class="uib_shim"></span>
+       </div>
+
+      </div>
+     </div>
     </div>
     <!-- /upage-outer -->
 
