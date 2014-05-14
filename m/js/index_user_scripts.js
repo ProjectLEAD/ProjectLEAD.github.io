@@ -35,6 +35,10 @@
         {
          activate_subpage("#What_We_Love"); 
         });
+        $(document).on("click", ".uib_w_23", function(evt)
+        {
+         activate_subpage("#About"); 
+        });
 }
  $(document).ready(register_event_handlers);
 })();
