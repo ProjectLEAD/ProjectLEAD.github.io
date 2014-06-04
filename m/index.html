@@ -14,12 +14,9 @@
       Intel(R) App Preview mobile app.
       DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
   -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
+ <!--   
+   You may substitute jQuery for the App Framework selector library.
+   See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
   -->
  <!-- content goes here-->
  <!--
@@ -28,61 +25,9 @@
       Intel(R) App Preview mobile app.
       DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
   -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
-  -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
-  -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
-  -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
-  -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
-  -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
-  -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
-  -->
- <!-- content goes here-->
- <!--
-      Include xhr.js in your index.html when using web services that make cross origin requests
-      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
-      Intel(R) App Preview mobile app.
-      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
+ <!--   
+   You may substitute jQuery for the App Framework selector library.
+   See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
   -->
  <!-- content goes here-->
  <!--
@@ -98,11 +43,12 @@
  <!-- content goes here-->
 
  <head>
+  <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="app_framework/css/af.ui.min.css">
   <link rel="stylesheet" type="text/css" href="app_framework/css/icons.min.css">
   <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
-  <title>Project LEAD App</title>
+  <title>Your New Application</title>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
   <style type="text/css">
@@ -131,10 +77,6 @@
   <script type="application/javascript" src="js/jquery.min.js"></script>
   <script type="application/javascript" src="js/index_user_scripts.js"></script>
   <script type="application/javascript" src="js/af_subpage.js"></script>
-  <script type="application/javascript" src="sidebar/js/jquery.event.move.js"></script>
-  <script type="application/javascript" src="sidebar/js/jquery.event.swipe.js"></script>
-  <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
-  <script type="application/javascript" src="sidebar/js/swipe.js"></script>
   <!--   
    You may substitute jQuery for the App Framework selector library.
    See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
@@ -142,7 +84,7 @@
   <script type="application/javascript" src="app_framework/appframework.js"></script>
  </head>
 
- <body id="afui">
+ <body id="afui" class="bb">
 
   <!-- content goes here-->
   <div class="uwrap" id="content">
@@ -152,8 +94,7 @@
       <h1>Project LEAD</h1>
       <div class="widget-container wrapping-col single-centered"></div>
       <div class="widget-container content-area horiz-area wrapping-col left"></div>
-      <div class="widget-container content-area horiz-area wrapping-col right"><a class="button widget uib_w_23 d-margins icon user" data-uib="app_framework/button" data-ver="0">About Us</a>
-      </div>
+      <div class="widget-container content-area horiz-area wrapping-col right"></div>
      </header>
      <div class="upage-content" id="mainsub">
 
@@ -165,23 +106,32 @@
           <div class="widget-container left-receptacle"></div>
           <div class="widget-container right-receptacle"></div>
           <div>
-           <p>Project LEAD (Learn Everything Applying DIY) is an Illinois non-profit focusing on encouraging interest in the STEM (Science Techonlogy Engineering and Math) fields.</p>
+           <p>Project LEAD is an Illinois Based Non-Profit Encouraging and fostering interest in the STEM (Sci, Tech, Engi, and Math) fields through online content AND real-world interaction!</p>
+           <p>LEAD stands for Learn Everything Applying DIY, because learning by doing is the best, and that hands-on experience gives a personal tie to the project that is created.</p>
+           <p>Keep up-to-date with Project LEAD by checking back periodically!</p>
           </div>
          </div>
-         <div class="widget uib_w_11 scale-image d-margins" data-uib="media/img" data-ver="0">
+         <div class="widget uib_w_9 scale-image d-margins" data-uib="media/img" data-ver="0">
           <figure class="figure-align">
            <img src="Blank (72).png">
-
            <figcaption data-position="bottom"></figcaption>
           </figure>
+         </div>
+         <div class="widget uib_w_21 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Our Mission:</p>
+          </div>
          </div>
          <div class="widget uib_w_22 d-margins" data-uib="media/text" data-ver="0">
           <div class="widget-container left-receptacle"></div>
           <div class="widget-container right-receptacle"></div>
           <div>
-           <p>Project LEAD is working on sharing some of the most interesting aspects of the STEM felds with the world through social media, and at no cost to the consumer.</p>
+           <p>Project LEAD's goal is to increase awareness and interest in STEM fields. We have gone about this in a variety of ways, but have especially focused on the digital medium. We have published well over 50 videos and counting with more being added
+            every week! We have reached people in 168 (of the 196) countries in the world, even some in countries where they aren't supposed to have YouTube.</p>
            <p>&nbsp;</p>
-           <p>Project LEAD has also taken part in a number of Maker Faires, and will be sponsoring a Hackathon in Chicago.</p>
+           <p>Outside of our digital activities we also do local events like Maker Faires, and have presented to school classes many times discussing anything from high-altitude balloons to 3D Printing.</p>
           </div>
          </div><span class="uib_shim"></span>
         </div>
@@ -189,13 +139,66 @@
        <span class="uib_shim"></span>
       </div>
      </div>
-     <div id="What_We_Love" class="upage-content hidden">
+     <div id="More" class="upage-content hidden">
 
-      <div class="grid grid-pad urow uib_row_7 row-height-7" data-uib="layout/row" data-ver="0">
+      <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+         <a class="button widget uib_w_10 d-margins icon user" data-uib="app_framework/button" data-ver="0">About Us</a><a class="button widget uib_w_11 d-margins icon wifi" data-uib="app_framework/button" data-ver="0">Find Us Online</a><span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
+     </div>
+     <div id="FindUs" class="upage-content hidden">
+
+      <div class="grid grid-pad urow uib_row_10 row-height-10" data-uib="layout/row" data-ver="0">
        <div class="col uib_col_7 col-0_12-12" data-uib="layout/col" data-ver="0">
         <div class="widget-container content-area vertical-col">
 
-         <div class="widget uib_w_17 d-margins iframe-size" data-uib="media/iframe" data-ver="0">
+         <div class="widget uib_w_14 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Like us here...</p>
+          </div>
+         </div>
+         <div class="widget uib_w_13 d-margins" data-uib="media/iframe" data-ver="0">
+          <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FIITProjectLead&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;"
+          allowtransparency="true"></iframe>
+         </div>
+         <div class="widget uib_w_15 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Subscribe to our videos here...</p>
+          </div>
+         </div>
+         <div class="embed-video widget uib_w_16 d-margins" data-uib="media/youtube" data-ver="0">
+          <iframe src="http://www.youtube.com/embed/1eOsxC9RhpI?controls=0&amp;wmode=transparent">
+          </iframe>
+         </div>
+         <div class="widget uib_w_17 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle"></div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>And check out our twitter on the "What We Love" tab!</p>
+           <p>You will get all the latest from Project LEAD, our videos, news, and TONS of interesting articles relating to the STEM field! Enjoy!</p>
+          </div>
+         </div><span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
+     </div>
+     <div id="WhatWeLove" class="upage-content hidden">
+
+      <div class="grid grid-pad urow uib_row_6 row-height-6" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+
+         <div class="widget uib_w_12 d-margins iframe-size" data-uib="media/iframe" data-ver="0">
           <iframe src="http://projectlead.github.io/MobileApp/TwitterWidget"></iframe>
          </div><span class="uib_shim"></span>
         </div>
@@ -205,20 +208,20 @@
      </div>
      <div id="About" class="upage-content hidden">
 
-      <div class="grid grid-pad urow uib_row_9 row-height-9" data-uib="layout/row" data-ver="0">
-       <div class="col uib_col_9 col-0_12-12" data-uib="layout/col" data-ver="0">
+      <div class="grid grid-pad urow uib_row_11 row-height-11" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_8 col-0_12-12" data-uib="layout/col" data-ver="0">
         <div class="widget-container content-area vertical-col">
 
          <div class="widget uib_w_18 d-margins" data-uib="media/text" data-ver="0">
           <div class="widget-container left-receptacle"></div>
           <div class="widget-container right-receptacle"></div>
           <div>
-           <p>Project LEAD is run by an amazing group of people. Info about each can be found below!</p>
+           <p>Project LEAD is run by a great group of people, you can find their bios and contact info below. Picture sizes reflect impact on John's Facebook Timeline</p>
           </div>
          </div>
-         <div class="widget uib_w_19 d-margins" data-uib="media/text" data-ver="0">
+         <div class="widget uib_w_20 d-margins" data-uib="media/text" data-ver="0">
           <div class="widget-container left-receptacle">
-           <div class="widget uib_w_20 scale-image d-margins" data-uib="media/img" data-ver="0">
+           <div class="widget uib_w_19 scale-image d-margins" data-uib="media/img" data-ver="0">
             <figure class="figure-align">
              <img src="John Moosemiller bio.png">
              <figcaption data-position="bottom"></figcaption>
@@ -227,54 +230,68 @@
           </div>
           <div class="widget-container right-receptacle"></div>
           <div>
-           <p>John Moosemiller:</p>
-           <p>A rising Sophmore at the University of Houston, and one of the co-founders of Project LEAD. His interests outside his major (Chemical Engineering) reside in technology, and software applications.</p>
-           <p>John does much of the Planning and Production for Project LEAD, and is also the developer of this app.</p>
-           <p>You can find him online in these places:</p>
-           <p>Twitter - @MohnJoosemiller</p>
-           <p>Github - Bltsandwich1</p>
+           <p>John Moosemiller is a rising Sophmore at the University of Houston majoring in Chemical Engineering. Outside of school you can find John playing games, and doing stuff for Project LEAD.</p>
+           <p>Interests outside of his major are focused on electronics, and software development. He's the creator of this app, and is looking to expand his knowledge and put it to work in other fields.</p>
+           <p>John is one of the cofounders of Project LEAD, and manages a majority of Project LEAD still!</p>
+           <p>A sampling of his current and former job titles are: Cofounder and Member of the Board of Project LEAD, Summer Intern at the University of Chicago's Computation Institute, Calm and Collected Customer Assistant at RESTLYE Chicago, Engineering
+            TA UH Cullen College of Engineering.</p>
           </div>
          </div>
-         <div class="widget uib_w_21 d-margins" data-uib="media/text" data-ver="0">
+         <div class="widget uib_w_23 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle">
+           <div class="widget uib_w_24 scale-image d-margins" data-uib="media/img" data-ver="0">
+            <figure class="figure-align">
+             <img src="Moses bio.png">
+             <figcaption data-position="bottom"></figcaption>
+            </figure>
+           </div>
+          </div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Moses Chan</p>
+           <p>A complete and utter friend to all things mechanical, the member of Project LEAD that always seems to have an extra 'alan wrench' when you need it most.</p>
+           <p>Moses has played a part in our app-development, 3D printing, Maker-faire activities, and more.</p>
+           <p>Moses is a rising sophomore Mechanical Engineering major at THE Ohio State University. He plans to focus on robotics in his studies AND spare time. He was an active member in FIRST Robotics, and plans to continue his interest in robotics with
+            the addition of another 3D printer to the Project LEAD family.</p>
+          </div>
+         </div>
+         <div class="widget uib_w_25 d-margins" data-uib="media/text" data-ver="0">
           <div class="widget-container left-receptacle"></div>
           <div class="widget-container right-receptacle"></div>
           <div>
-           <p>Bios of the other members of Project LEAD are on their way!</p>
+           <p>Daniel Jaing</p>
+           <p>A real whiz at everything that you aren't. Daniel makes up the bulk of the Project LEAD design team, and has created all of the wonderful logos you see around Project LEAD Pages.</p>
+           <p>Daniel is a rising sophomore at the University of Illinois Urbana Champaign where he is studying physics with a minor in awesomeness.</p>
+           <p>He is one of the cofounders of Project LEAD, and has helped guide us in our mission!</p>
+           <p>He has no Facebook, and thus... No picture. (wouldn't want him to be TOO awesome)</p>
           </div>
-         </div><span class="uib_shim"></span>
-        </div>
-       </div>
-       <span class="uib_shim"></span>
-      </div>
-     </div>
-     <div id="about" class="upage-content hidden">
-     </div>
-     <div id="About_Us" class="upage-content hidden">
-     </div>
-
-     <div id="profile_page" class="upage-content hidden">
-
-      <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
-       <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
-        <div class="widget-container content-area vertical-col">
-
-         <div class="widget uib_w_8 d-margins" data-uib="media/text" data-ver="0">
+         </div>
+         <div class="widget uib_w_26 d-margins" data-uib="media/text" data-ver="0">
           <div class="widget-container left-receptacle"></div>
           <div class="widget-container right-receptacle"></div>
           <div>
-           <p>Find us online in these places!</p>
-           <p><a href="https://www.facebook.com/IITProjectLead">Facebook</a>
-           </p>
-           <p><a href="https://www.twitter.com/projectleadiit">Twitter</a>
-           </p>
-           <p><a href="https://www.youtube.com/projectleadiit">YouTube</a>
-           </p>
-           <p>Like, follow, and subscribe to us, and you'll get all the lastest that we're doing. Check out some of our videos below!</p>
+           <p>Atreya (Jai) Laxman</p>
+           <p>Current Rising Sophomore at the Universit of Illinois Urbana Champaign. Jai has helped us with some of our planning, and with the production of some of our legal documents. He is probably studying something really dificult in college because
+            he was unable to email me a bio for himself even though he's been out of school for 2 weeks.</p>
+           <p>Again, No Facebook, so no picture :( Be trust us, he's a real looker *cringes*</p>
+           <p>&nbsp;</p>
           </div>
          </div>
-         <div class="embed-video widget uib_w_13 d-margins" data-uib="media/youtube" data-ver="0">
-          <iframe src="http://www.youtube.com/embed/1GuiEOJhtuw?controls=0&amp;wmode=transparent">
-          </iframe>
+         <div class="widget uib_w_27 d-margins" data-uib="media/text" data-ver="0">
+          <div class="widget-container left-receptacle">
+           <div class="widget uib_w_28 scale-image d-margins" data-uib="media/img" data-ver="0">
+            <figure class="figure-align">
+             <img src="Arpan Bio Pic.png">
+             <figcaption data-position="bottom"></figcaption>
+            </figure>
+           </div>
+          </div>
+          <div class="widget-container right-receptacle"></div>
+          <div>
+           <p>Arpan Rau</p>
+           <p>He likes robotics, and is taking a gap year before college, so hopefully he is able to build up a bio for himself by the time that I update this app.</p>
+           <p>He like robots, and balloons. That's why he's the only one of us to ever get a paycheck from NASA.</p>
+          </div>
          </div><span class="uib_shim"></span>
         </div>
        </div>
@@ -284,10 +301,9 @@
 
      <!-- /upage-content -->
 
-     <footer class="inner-element uib_w_3" data-uib="app_framework/footer" data-ver="0" id="af-footer-0"><a class="widget uib_w_5 d-margins icon home" data-uib="app_framework/button" data-ver="0" id="homebtn">Home</a><a class="widget uib_w_6 d-margins icon heart" data-uib="app_framework/button" data-ver="0" id="favbtn">What we Love</a><a class="widget uib_w_4 d-margins icon magnifier"
-      data-uib="app_framework/button" data-ver="0" id="messagebtn">Find Us</a>
+     <footer class="inner-element uib_w_3" data-uib="app_framework/footer" data-ver="0" id="af-footer-0"><a class="widget uib_w_5 d-margins icon home" data-uib="app_framework/button" data-ver="0" id="homebtn">Home</a><a class="widget uib_w_6 d-margins icon heart" data-uib="app_framework/button" data-ver="0" id="Lovebtn">What we Love</a>
+      <a class="widget uib_w_8 d-margins icon add" data-uib="app_framework/button" data-ver="0">More</a>
      </footer>
-
     </div>
     <!-- /upage-outer -->
 

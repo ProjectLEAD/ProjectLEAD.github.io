@@ -12,32 +12,41 @@
         {
          activate_subpage("#mainsub"); 
         });
-        
-        
+        $("#favbtn").click(function(evt)
+        {
+         activate_subpage("#favorite_page"); 
+        });
+        $("#messagebtn").click(function(evt)
+        {
+         activate_subpage("#messages_page"); 
+        });
         $("#profilebtn").click(function(evt)
         {
          activate_subpage("#profile_page"); 
         });
-        $(document).on("click", "#messagebtn", function(evt)
+        $(document).on("click", "#Lovebtn", function(evt)
         {
-         activate_subpage("#profile_page"); 
+         activate_subpage("#WhatWeLove"); 
         });
-        
-        $(document).on("click", ".uib_w_15", function(evt)
+        $(document).on("click", "#FindUsbtn", function(evt)
+        {
+         activate_subpage("#FindUs"); 
+        });
+        $(document).on("click", ".uib_w_8", function(evt)
+        {
+         activate_subpage("#More"); 
+        });
+        $(document).on("click", ".uib_w_10", function(evt)
         {
          activate_subpage("#About"); 
         });
-        $(document).on("click", ".uib_w_16", function(evt)
+        $(document).on("click", ".uib_w_11", function(evt)
         {
-         activate_subpage("#mainsub"); 
+         activate_subpage("#FindUs"); 
         });
-        $(document).on("click", "#favbtn", function(evt)
+        $(document).on("click", ".uib_w_13", function(evt)
         {
-         activate_subpage("#What_We_Love"); 
-        });
-        $(document).on("click", ".uib_w_23", function(evt)
-        {
-         activate_subpage("#About"); 
+        /* your code goes here */ 
         });
 }
  $(document).ready(register_event_handlers);
